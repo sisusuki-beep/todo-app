@@ -1,0 +1,25 @@
+# --- 秘密情報（公開しない） ---
+.env
+.env.*
+!.env.example
+.secret_key
+*.pem
+*.key
+
+# --- データベース（ユーザー情報・個人のタスクを含む） ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- 生成物・依存 ---
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+dist/
+.pytest_cache/
+
+# --- 公開不要・秘密が混入しているファイル ---
+*.zip
+*.docx
+chat-summary.md
